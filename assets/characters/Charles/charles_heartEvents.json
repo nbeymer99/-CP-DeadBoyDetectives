@@ -1,0 +1,18 @@
+{
+	"Changes": [
+    {
+		"Action": "EditData",
+		"Target": "Data/Events/Forest",
+		"Entries": {
+			//2 hearts
+			
+			// 5 hearts
+			"{{ModId}}_charlesheart5/f CharlesRowland 1750/t 0600 1800/Season winter": "sad_kid/-1000 -1000/farmer 47 17 3 CharlesRowland 37 17 2/skippable//animate EdwinPayne false true 120 27",
+			
+			// 7 hearts - see edwin_heartEvents
+			
+	
+		}
+	}
+	]
+}
