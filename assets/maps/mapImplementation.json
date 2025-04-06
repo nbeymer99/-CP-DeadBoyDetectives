@@ -33,13 +33,7 @@
                     "CreateOnLoad": {
                         "MapPath": "Maps/{{ModId}}_Backpack"
                     }
-                },
-				
-			//	"{{ModId}}_TongueAndTail": {
-            //        "CreateOnLoad": {
-            //            "MapPath": "Maps/{{ModId}}_TongueAndTail"
-            //        }
-            //    }
+                }
             }
         },
 		
@@ -156,15 +150,6 @@
 			"Action": "EditMap",
 			"Target": "Maps/Town",
 			"LogName": "EditTownMap",
-			"FromFile": "assets/maps/TongueAndTail.tmx",
-			"FromArea": { "X": 6, "Y": 63, "Width": 16, "Height": 14 },
-			"ToArea": { "X": 6, "Y": 63, "Width": 16, "Height": 14 }
-		},
-		
-		{
-			"Action": "EditMap",
-			"Target": "Maps/Town",
-			"LogName": "EditTownMap",
 			"FromFile": "assets/maps/Town.tmx",
 			"FromArea": { "X": 15, "Y": 12, "Width": 1, "Height": 1 },
 			"ToArea": { "X": 15, "Y": 12, "Width": 1, "Height": 1 }
@@ -195,38 +180,9 @@
 				"HasMod": "FlashShifter.StardewValleyExpandedCP",
 			}
 		},
+
 		
-		// EDIT TOWN MAP
-		//
-		// day/night tiles and lighting
-		{
-            "Action": "EditMap",
-            "Target": "Maps/Town",
-			"TextOperations": [
-			{
-				"Operation": "Append",
-				"Target": ["MapProperties", "NightTiles"],
-				"Value": "AlwaysFront 18 71 11 AlwaysFront 19 71 12 AlwaysFront 18 72 24 AlwaysFront 19 72 25 AlwaysFront 18 73 37 AlwaysFront 19 73 38",
-				"Delimiter": " "
-			},
-			
-			{
-				"Operation": "Append",
-				"Target": ["MapProperties", "DayTiles"],
-				"Value": "AlwaysFront 18 71 50 AlwaysFront 19 71 51 AlwaysFront 18 72 63 AlwaysFront 19 72 64 AlwaysFront 18 73 76 AlwaysFront 19 73 77",
-				"Delimiter": " "
-			},
-			
-			{
-				"Operation": "Append",
-				"Target": ["MapProperties", "spacechase0.SpaceCore_ColoredLights"],
-				"Value": "18 71 4 1 50 255 255 19 71 4 1 50 255 255 18 72 4 1 50 255 255 19 72 4 1 50 255 255 19 73 4 1 50 255 255",
-				"Delimiter": " "
-			},
-			]
-		},
-		
-		// swing passable
+		// edit town map - swing passable
 		{
             "Action": "EditMap",
             "Target": "Maps/Town",
